@@ -18,10 +18,13 @@ function Experience() {
           }
         ],
         highlights: [
-          'Built AI-enhanced features with ChatGPT agents and Sonnet to automate decision-making and client support',
-          'Integrated AWS Cognito authentication across microservices: payment-gateway, loan-service, user-service',
-          'Led GraphQL migration and modular React UI library efforts',
-          'Boosted loan auto-approval rates by 40% and improved support efficiency by 30%'
+          'Developed AI-enhanced features utilizing ChatGPT agents and Sonnet 3.7 agent.',
+          'Collaborated with cross-functional teams to establish project requirements and specifications.',
+          'Researched emerging technologies to pinpoint innovation opportunities in products.',
+          'Worked with developers during development phase to ensure timely project completion within budget.',
+          'Led migration to GraphQL and designed modular React UI.',
+          'Integrated AWS Cognito with payment, loan, and user microservices.',
+          'Increased auto-approval rate by 40% and enhanced support efficiency by 30%.'
         ]
       },
       {
@@ -36,9 +39,10 @@ function Experience() {
           }
         ],
         highlights: [
-          'Delivered serverless AWS Lambda microservices using Serverless Framework',
-          'Created data visual dashboards with React and react-google-charts',
-          'Boosted engineering throughput by 40% by building reusable components'
+          'Developed scalable software applications for online learning platforms.',
+          'Created dashboards utilizing React and react-google-charts for enhanced data visualization.',
+          'Built AWS Lambda microservices employing Serverless framework to increase functionality.',
+          'Boosted throughput by 40% through implementation of reusable modules.'
         ]
       },
       {
@@ -53,8 +57,10 @@ function Experience() {
           }
         ],
         highlights: [
-          'Reduced technical issues by 53% across AppBank operations',
-          'Created diagnostic tools with Java, Python, and Slang for TDD practices'
+          'Achieved a 53% reduction in AppBank technical issues through targeted solutions.',
+          'Developed diagnostic tools utilizing Java, Python, and Slang for test-driven development.',
+          'Collaborated with cross-functional teams to resolve technical challenges and enhance workflows.',
+          'Authored comprehensive documentation outlining procedures and processes for technology support.'
         ]
       },
       {
@@ -69,8 +75,10 @@ function Experience() {
           }
         ],
         highlights: [
-          'Built internal GUIs using Ember.js and jQueryUI for international operations',
-          'Integrated SOAP and REST APIs in AJAX-heavy legacy systems'
+          'Developed responsive web applications with JavaScript, HTML, and CSS frameworks.',
+          'Maintained Ember.js and jQueryUI applications for global operations.',
+          'Assisted in troubleshooting and resolving technical issues for end-users.',
+          'Designed RESTful APIs for seamless backend integration'
         ]
       },
       {
@@ -100,7 +108,7 @@ function Experience() {
               10+ years of progressive responsibility building scalable systems and leading engineering teams
             </p>
           </div>
-          
+
           <div className="space-y-8">
             {experiences.map((exp) => (
               <div key={exp.id} className="card p-8">
@@ -121,7 +129,7 @@ function Experience() {
                     ))}
                   </div>
                 </div>
-                
+
                 <ul className="space-y-2">
                   {exp.highlights.map((highlight, index) => (
                     <li key={index} className="flex items-start">
