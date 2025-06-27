@@ -7,8 +7,7 @@ function Projects() {
         description: 'iOS/Web application that automatically generates Meeting Minutes using Spring framework and IBM Watson NLP for intelligent content processing.',
         image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=300&fit=crop',
         technologies: ['Spring', 'IBM Watson NLP', 'iOS', 'Natural Language Processing'],
-        liveUrl: 'https://bit.ly/MoM',
-        githubUrl: '#'
+        githubUrl: 'https://github.com/gitgibsgau/MeetingMate-A-Speech-Analytics-App'
       },
       {
         id: 2,
@@ -16,8 +15,7 @@ function Projects() {
         description: 'Immersive virtual reality real estate platform built with MEAN stack and Unity for 3D property visualization and virtual tours.',
         image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop',
         technologies: ['MEAN Stack', 'Unity', 'VR', 'MongoDB', 'Angular'],
-        liveUrl: 'https://bit.ly/HouseVR',
-        githubUrl: '#'
+        githubUrl: 'https://github.com/gitgibsgau/realtorVR'
       },
       {
         id: 3,
@@ -25,7 +23,6 @@ function Projects() {
         description: 'Scalable cloud file sharing platform with secure file storage, real-time synchronization, and collaborative features using Java and AWS.',
         image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop',
         technologies: ['Java', 'AWS S3', 'NoSQL', 'REST APIs', 'Cloud Storage'],
-        liveUrl: 'https://bit.ly/CloudFileSharing',
         githubUrl: '#'
       },
       {
@@ -34,7 +31,6 @@ function Projects() {
         description: 'IoT-based smart attendance tracking system using Android, Bluetooth Low Energy, Node.js backend, and Raspberry Pi hardware integration.',
         image: 'https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=400&h=300&fit=crop',
         technologies: ['Android', 'BLE', 'Node.js', 'Raspberry Pi', 'IoT'],
-        liveUrl: '#',
         githubUrl: '#'
       }
     ];
@@ -67,17 +63,6 @@ function Projects() {
                         {tech}
                       </span>
                     ))}
-                  </div>
-                  
-                  <div className="flex gap-3">
-                    <a href={project.liveUrl} className="flex items-center text-blue-600 hover:text-blue-700 font-medium">
-                      <div className="icon-external-link text-sm mr-1"></div>
-                      Live Demo
-                    </a>
-                    <a href={project.githubUrl} className="flex items-center text-gray-600 hover:text-gray-700 font-medium">
-                      <div className="icon-github text-sm mr-1"></div>
-                      Code
-                    </a>
                   </div>
                 </div>
               </div>
