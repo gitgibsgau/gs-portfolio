@@ -11,7 +11,7 @@ function Header() {
     return (
       <header className="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50" data-name="header" data-file="components/Header.js">
         <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-gray-900">Portfolio</div>
+          <div className="text-xl font-bold text-gray-900">Gaurav Shinde</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
