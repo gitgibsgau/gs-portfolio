@@ -30,9 +30,9 @@ function About() {
                 agents and Sonnet, and secure enterprise-grade platform development. My expertise spans 
                 full-stack development, team leadership, and modern DevOps practices with AWS.
               </p>
-              <button className="btn btn-primary">
-                Download Resume
-              </button>
+              <div className="bg-gray-100 rounded-lg px-4 py-2 text-center text-gray-700 font-medium">
+                Hire Me
+              </div>
             </div>
             
             <div>
