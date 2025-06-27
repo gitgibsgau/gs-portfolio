@@ -47,7 +47,7 @@ function Experience() {
       },
       {
         id: 3,
-        company: 'Goldman Sachs (via ParallelHR)',
+        company: 'Goldman Sachs',
         location: 'Salt Lake City, UT',
         positions: [
           {
@@ -65,7 +65,7 @@ function Experience() {
       },
       {
         id: 4,
-        company: 'AT&T (via Apex Systems)',
+        company: 'AT&T',
         location: 'Durham, NC',
         positions: [
           {
