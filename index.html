@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio - Gaurav Shinde</title>
+    <meta name="description" content="Professional portfolio showcasing my work and skills">
+    <meta name="keywords" content="portfolio, web developer, designer, projects">
+    <meta property="og:title" content="Portfolio - Gaurav Shinde">
+    <meta property="og:description" content="Professional portfolio showcasing my work and skills">
+    <meta name="twitter:title" content="Portfolio - Gaurav Shinde">
+    <meta name="twitter:description" content="Professional portfolio showcasing my work and skills">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        /* Define custom theme values like colors, spacing, fonts, etc. */
+    }
+
+    @layer base {
+        /* Add or override base styles for HTML elements (e.g., body, h1, p) */
+    }
+
+    @layer components {
+        .btn {
+            @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 cursor-pointer;
+        }
+        .btn-primary {
+            @apply bg-blue-600 text-white hover:bg-blue-700;
+        }
+        .btn-outline {
+            @apply border-2 border-gray-300 text-gray-700 hover:border-gray-400;
+        }
+        .section-padding {
+            @apply py-20 px-4;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+    }
+
+    @layer utilities {
+        /* Define custom utility classes (e.g., .text-shadow, .skew-10) */
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Experience.js"></script>
+    <script type="text/babel" src="components/Projects.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
