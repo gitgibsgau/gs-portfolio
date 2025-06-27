@@ -14,6 +14,30 @@ function Contact() {
       });
     };
 
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      setIsSubmitting(true);
+
+      const form = e.target;
+      const data = new FormData(form);
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString(),
+      })
+        .then(() => {
+          alert("Thank you for your message! I’ll get back to you soon.");
+          setFormData({ name: '', email: '', message: '' });
+          setIsSubmitting(false);
+        })
+        .catch((error) => {
+          alert("Oops! Something went wrong.");
+          console.error("Form submission error:", error);
+          setIsSubmitting(false);
+        });
+    };
+
     return (
       <section id="contact" className="section-padding bg-white" data-name="contact" data-file="components/Contact.js">
         <div className="max-w-4xl mx-auto">
@@ -54,16 +78,14 @@ function Contact() {
               </div>
             </div>
 
-            {/* Netlify-enabled contact form */}
             <form
               name="contact"
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
               className="space-y-6"
-              onSubmit={() => setIsSubmitting(true)}
+              onSubmit={handleSubmit}
             >
-              {/* Hidden inputs for Netlify */}
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
                 <label>
