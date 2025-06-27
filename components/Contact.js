@@ -7,18 +7,6 @@ function Contact() {
     });
     const [isSubmitting, setIsSubmitting] = React.useState(false);
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setIsSubmitting(true);
-      
-      // Simulate form submission
-      setTimeout(() => {
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        setFormData({ name: '', email: '', message: '' });
-        setIsSubmitting(false);
-      }, 1000);
-    };
-
     const handleChange = (e) => {
       setFormData({
         ...formData,
@@ -35,7 +23,7 @@ function Contact() {
               I'm always interested in new opportunities and interesting projects. Let's connect!
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Let's Talk</h3>
@@ -43,7 +31,7 @@ function Contact() {
                 Whether you have a project in mind, want to discuss opportunities, 
                 or just want to say hello, I'd love to hear from you.
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="icon-mail text-xl text-blue-600 mr-4"></div>
@@ -65,8 +53,24 @@ function Contact() {
                 </div>
               </div>
             </div>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
+
+            {/* Netlify-enabled contact form */}
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              className="space-y-6"
+              onSubmit={() => setIsSubmitting(true)}
+            >
+              {/* Hidden inputs for Netlify */}
+              <input type="hidden" name="form-name" value="contact" />
+              <p hidden>
+                <label>
+                  Don’t fill this out: <input name="bot-field" />
+                </label>
+              </p>
+
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Name
@@ -81,7 +85,7 @@ function Contact() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                   Email
@@ -96,7 +100,7 @@ function Contact() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                   Message
@@ -111,7 +115,7 @@ function Contact() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 disabled={isSubmitting}
